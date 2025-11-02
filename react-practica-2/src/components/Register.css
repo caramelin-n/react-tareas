@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+h1 {
+    font-family: Bagel fat one;
+    color: rgb(146, 35, 180);
+}
+*{
+    font-family: Mulish;
+    background-color: rgb(255, 214, 230);
+    cursor: url(../assets/img/Kirby--cursor--SweezyCursors.png), auto;
+}
+.Cont {
+    display: flex;
+    border: 2px rgb(255, 165, 198) solid;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 15px;
+    margin: 30px;
+    background-color: rgb(255, 240, 251);
+    box-shadow: 0 0 8px rgba(187, 89, 233, 0.6);
+}
+
+.Contenedor{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: inherit;
+}
+
+input{
+    border-radius: 10px;
+    border: 2px solid rgb(187, 89, 233);
+    font-size: 16px;
+    padding: 10px;
+    background-color: rgb(245, 212, 255);
+    transition: all 0.3s ease;
+}
+
+label {
+    background-color: rgb(255, 240, 251);
+}
+
+input:hover {
+    border-color: rgb(208, 145, 238);
+    box-shadow: 0 0 8px rgba(187, 89, 233, 0.6);
+    transition: all 0.3s ease;
+    cursor: url(../assets/img/Kirby--pointer--SweezyCursors.png), pointer;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(187, 89, 233, 0.6);
+    border-color: rgb(118, 59, 145);
+}
+
+button {
+    border: 2px solid rgb(187, 89, 233);
+    color: rgb(187, 89, 233);
+    transition: all 0.3s ease;
+    margin: 9px;
+}
+
+button:hover {
+    box-shadow: 0 0 8px rgba(187, 89, 233, 0.6);
+    border: 2px solid rgb(187, 89, 233);
+    transition: all 0.3s ease;
+    cursor: url(../assets/img/Kirby--pointer--SweezyCursors.png), pointer;
+}
