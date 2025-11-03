@@ -1,8 +1,21 @@
 import React from 'react'
+import { CharacterInfo } from '../components/CharacterInfo';
+import { useCounter } from '../hooks/useCounter';
+import { useFetch } from '../hooks/useFetch';
+import { Loading } from '../components/Loading';
 
 export const MultipleCustomHooks = () => {
+  const { count, handleIncrement, handleDecrement, handleReset } = useCounter(1);
+
+  const url = `https://thesimpsonsapi.com/api/characters/${count}`; 
   return (
-    <div>MultipleCustomHooks</div>
+    <div>
+      <CharacterInfo/>
+      <Loading/>
+      <button onClick={() => handleDecrement(1)}>Anterior</button>
+      <button onClick={handleReset}>Reiniciar</button>
+      <button onClick={() => handleIncrement(1)}>Siguiente</button>
+    </div>
   )
 }
 
