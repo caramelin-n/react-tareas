@@ -1,11 +1,10 @@
+import "./style.css";
+
 export const CharacterInfo = ({data}) => {
     return (
-    <>
-    <h1>Api Simpsons</h1>
-    <hr />
     <div className="container1">
         <div className="img">
-            <img src={`https://cdn.thesimpsonsapi.com/500${data?.portrait_path}`} alt={data?.name} />
+            <img src={`https://cdn.thesimpsonsapi.com/500${data?.portrait_path}`} alt={data?.name} className="img_pj" />
         </div>
         <div className="data">
             
@@ -15,6 +14,5 @@ export const CharacterInfo = ({data}) => {
             <h2>Estado: {data?.status}</h2>
         </div>
     </div>
-    </>
   )
 }

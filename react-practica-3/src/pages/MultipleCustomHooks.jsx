@@ -1,4 +1,4 @@
-import React from 'react'
+import "../components/style.css";
 import { CharacterInfo } from '../components/CharacterInfo';
 import { useCounter } from '../hooks/useCounter';
 import { useFetch } from '../hooks/useFetch';
@@ -14,6 +14,7 @@ export const MultipleCustomHooks = () => {
   
   return (
     <div>
+      <img src="https://thesimpsonsapi.com/hero.webp" alt="Api Simpsons Logo" className="logo1" />
       {isLoading ? (
         <Loading/>
       ) : error ? (
