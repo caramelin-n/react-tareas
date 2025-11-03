@@ -8,9 +8,7 @@ export const useCounter = (initialValue) => {
   };
 
   const handleDecrement = (number) => {
-    let resta = count - number;
-
-    if(resta < 0) return;
+    if(count - number < 1 ) return;
 
     setCount(count - number);
   };

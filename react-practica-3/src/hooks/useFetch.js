@@ -11,15 +11,22 @@ export const useFetch = (url) => {
 
   const getFetch = async () => {
     try {
-        const resp = await fetch(url);
-        const newData = await resp.json();
-        setState({
-            data: newData,
-            isLoading: false
-        });
+      setState({
+        ...state,
+        isLoading: true,
+      });
+      const resp = await fetch(url);
+      const newData = await resp.json();
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+      setState({
+        data: newData,
+        isLoading: false,
+        error: null
+      });
+
     } catch (error) {
         console.log("Error al obtener los personajes", error);
-        setState({ data: null, isLoading: false, error: null });
+        setState({ data: null, isLoading: false, error: error });
     };
   };
 
