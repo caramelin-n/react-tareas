@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Chewy&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: chewy;
+}
+
+.dona {
+    animation: spin 2s linear infinite;
+    width: 50px;
+    height: 50px;
+}
+
+@keyframes spin {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg);}
+}
+
+.logo1{
+    width: 260px !important;
+    height: 200px !important;
+}
+
+.container1 {
+    border: 4px solid rgb(233, 184, 24);
+    display: flex;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(255, 174, 0, 0.59);
+}
+
+h1 {
+    color: rgb(255, 217, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+button {
+    border: 4px dashed rgb(233, 184, 24);
+    margin: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 8px rgba(233, 184, 24, 0.739);
+    border: 2px solid rgb(233, 184, 24);
+    transition: all 0.3s ease;
+    cursor: url(../assets/img/Kirby--pointer--SweezyCursors.png), pointer;
+}
+
+.img_pj {
+    margin-right: 70px;
+    box-shadow: 0 0 8px rgba(233, 184, 24, 0.739);
+    border-radius: 10px;
+}
